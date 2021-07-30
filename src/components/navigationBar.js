@@ -1,6 +1,7 @@
 // import { navData } from "../data/data.js";
 import {logo} from "./logo.js";
 import {NavLinks} from "./navLinks.js"
+import { Hamburger } from "./hamburger.js";
 
 
 export const NavigationBar = (navData) => {
@@ -9,6 +10,7 @@ export const NavigationBar = (navData) => {
 
     markup.appendChild(logo(navData.logo));
     markup.appendChild(NavLinks(navData.navLinks));
+    markup.appendChild(Hamburger());
 
     return markup;
 }

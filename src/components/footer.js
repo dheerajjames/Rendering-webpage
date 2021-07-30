@@ -24,7 +24,6 @@ export const footer = (props) => {
         let linkicons = document.createElement("i");
         linkicons.classList.add("fab",`${link.className}`,"fa-2x");
         linkanchor.href =link.href;
-        // linklist.classList.add("");
         linkanchor.appendChild(linkicons);
         linklist.appendChild(linkanchor);
         social.appendChild(linklist);
